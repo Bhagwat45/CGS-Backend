@@ -2,8 +2,8 @@ services:
   - type: web
     name: ai-career-guidance-api
     runtime: docker
-    dockerfilePath: ./backend/Dockerfile
-    dockerContext: .
+    dockerfilePath: ./AI-Career-Guidance-System/backend/Dockerfile
+    dockerContext: ./AI-Career-Guidance-System
     healthCheckPath: /api/health
     envVars:
       - key: MONGODB_URL
