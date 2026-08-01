@@ -1,0 +1,45 @@
+.recommendation-card {
+    background: white;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top h3 {
+    color: #1e293b;
+}
+
+.top span {
+    background: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-chip {
+    background: #eef4ff;
+    color: #2563eb;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}

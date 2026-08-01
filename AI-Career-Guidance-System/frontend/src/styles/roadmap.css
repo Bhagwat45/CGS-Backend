@@ -1,0 +1,36 @@
+.roadmap-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.roadmap-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.roadmap-top h4 {
+    color: #1e293b;
+}
+
+.roadmap-top span {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 20px;
+}

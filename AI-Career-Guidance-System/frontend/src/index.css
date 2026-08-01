@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 97%;
+    --foreground: 222 35% 15%;
+    --primary: 174 72% 38%;
+    --primary-foreground: 0 0% 100%;
+    --ink: #17233c;
+    --muted: #6d7890;
+    --surface: #ffffff;
+    --line: #e3e9f1;
+    --mint: #16a394;
+    --coral: #f27d63;
+    --navy: #17233c;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+  }
+}
+
+body {
+  @apply bg-background text-foreground;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: #f4f7fb;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
