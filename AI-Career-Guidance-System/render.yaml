@@ -2,6 +2,7 @@ services:
   - type: web
     name: ai-career-guidance-api
     runtime: docker
+    plan: free
     dockerfilePath: ./AI-Career-Guidance-System/backend/Dockerfile
     dockerContext: ./AI-Career-Guidance-System
     healthCheckPath: /api/health
