@@ -13,7 +13,7 @@ app = FastAPI(
 # Configure CORS for frontend access
 origins = [origin.strip() for origin in os.getenv(
     "FRONTEND_URL",
-    "http://localhost:3000,http://127.0.0.1:3000",
+    "https://cgs-frontend-eight.vercel.app,http://localhost:3000,http://127.0.0.1:3000",
 ).split(",") if origin.strip()]
 
 app.add_middleware(
